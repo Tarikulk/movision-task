@@ -1,0 +1,40 @@
+.movie__list {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.list__title {
+font-size: 1.75rem;
+margin:  2.5rem;
+}
+
+.list__cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+ 
+.search_input{
+  text-align: center;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+  color: white;
+  background: none;
+  transition: border-color 0.2s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .list__cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .list__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
